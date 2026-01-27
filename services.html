@@ -1,52 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tandem Young - Services</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Tandem J. Young</h1>
-        <p>PhD Student in Economics | Researcher | Outdoor Enthusiast</p>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="services.html">Services</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="services">
-            <h2>Services</h2>
-            <p>I offer the following services:</p>
-            <ul>
-                <li>Economic Data Analysis</li>
-                <li>Data Analytics and Insights</li>
-            </ul>
-        </section>
-        <section id="consultation-form">
-            <h2>Request a Consultation</h2>
-            <form action="https://formspree.io/f/mqazkkrq" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Tandem Young. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+---
+layout: default
+title: Tandem Young - Services
+---
+
+<section id="services">
+  <h2>Services</h2>
+  <p>I offer the following services:</p>
+  <ul>
+    <li>Economic Data Analysis</li>
+    <li>Data Analytics and Insights</li>
+  </ul>
+</section>
+
+<section id="consultation-form">
+  <h2>Request a Consultation</h2>
+
+  <form action="https://formspree.io/f/mqazkkrq" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
 
