@@ -414,92 +414,25 @@ thead th {
 
 .home-hero {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 240px minmax(0, 1fr);
   gap: 28px;
   align-items: center;
-}
-
-.home-photo-wrap {
-  margin: 0;
 }
 
 .home-photo {
-  width: 240px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 999px;
-  border: 4px solid #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-}
-
-.home-lede {
-  max-width: 70ch;
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-.home-actions {
-  margin-top: 14px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-/* If you don't already have a .btn class, this makes links look like buttons */
-.btn {
-  display: inline-block;
-  padding: 10px 14px;
-  border-radius: 10px;
-  text-decoration: none;
-  border: 1px solid #ddd;
-}
-
-/* Responsive */
-@media (max-width: 700px) {
-  .home-hero {
-    grid-template-columns: 1fr;
-    align-items: start;
-  }
-
-  .home-photo {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-
-/* Home hero (force 2-column) */
-.home {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.home .home-hero {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 28px;
-  align-items: center;
-}
-
-.home .home-photo {
   display: block;
   width: 240px;
   height: 240px;
+  max-width: 240px;     /* protects against global img rules */
   object-fit: cover;
   border-radius: 999px;
   border: 4px solid #fff;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
-/* Only stack on small screens */
-@media (max-width: 700px) {
-  .home .home-hero {
-    grid-template-columns: 1fr;
-    align-items: start;
-  }
+.home-content { min-width: 0; }
 
-  .home .home-photo {
-    width: 200px;
-    height: 200px;
-  }
+@media (max-width: 700px) {
+  .home-hero { grid-template-columns: 1fr; }
+  .home-photo { width: 200px; height: 200px; max-width: 200px; }
 }
