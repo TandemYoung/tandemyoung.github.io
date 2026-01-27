@@ -3,7 +3,29 @@ layout: default
 title: Tandem Young - Home
 ---
 
-<section>
-  <h2>Welcome to My Website!</h2>
-  <p>This is the home page of Tandem Young. Explore my site to learn more about me, my work, and my interests.</p>
+<section class="home">
+  <div class="home-hero">
+    <figure class="home-photo-wrap">
+      <img
+        class="home-photo"
+        src="images/woopig.jpg"
+        alt="woopig"
+        loading="lazy"
+      >
+    </figure>
+
+    <div class="home-content">
+      <h2>Welcome</h2>
+      <p class="home-lede">
+        I’m Tandem Young, a PhD student in Economics at the University of Arkansas. I work on applied econometrics,
+        spatial analysis, and data-driven policy questions. Explore the site to see my research, teaching, and projects.
+      </p>
+
+      <div class="home-actions">
+        <a class="btn" href="{{ 'about.html' | relative_url }}">About</a>
+        <a class="btn" href="{{ 'portfolio.html' | relative_url }}">Portfolio</a>
+        <a class="btn" href="{{ 'cv.html' | relative_url }}">CV</a>
+      </div>
+    </div>
+  </div>
 </section>
