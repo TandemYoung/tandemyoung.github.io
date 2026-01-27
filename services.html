@@ -3,30 +3,106 @@ layout: default
 title: Tandem Young - Services
 ---
 
-<section id="services">
-  <h2>Services</h2>
-  <p>I offer the following services:</p>
-  <ul>
-    <li>Economic Data Analysis</li>
-    <li>Data Analytics and Insights</li>
-  </ul>
-</section>
+<section id="services" class="services">
+  <div class="services-header">
+    <h2>Services</h2>
+    <p class="services-lede">
+      I help teams turn messy data into clear, defensible insights—whether that’s for research,
+      strategy, or decision support.
+    </p>
+  </div>
 
-<section id="consultation-form">
-  <h2>Request a Consultation</h2>
+  <div class="services-grid">
+    <!-- Left column: offerings -->
+    <div class="services-left">
+      <div class="card">
+        <h3>What I can help with</h3>
+        <ul class="service-list">
+          <li>
+            <strong>Economic & policy analysis</strong><br>
+            Applied microeconometrics, evaluation design, and clear communication of results.
+          </li>
+          <li>
+            <strong>Data analytics & visualization</strong><br>
+            Dashboards, reporting, and exploratory analysis for actionable takeaways.
+          </li>
+          <li>
+            <strong>Spatial / regional analysis</strong><br>
+            Mapping, spatial joins, distance-based features, and regional comparisons.
+          </li>
+          <li>
+            <strong>Reproducible workflows</strong><br>
+            Clean pipelines, documentation, and version-controlled research outputs.
+          </li>
+        </ul>
+      </div>
 
-  <form action="https://formspree.io/f/mqazkkrq" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+      <div class="services-cards">
+        <div class="card">
+          <h3>Typical deliverables</h3>
+          <ul>
+            <li>One-page memo or briefing deck</li>
+            <li>Clean dataset + code (Python/R) with README</li>
+            <li>Visualizations (maps, charts) + interpretation</li>
+            <li>Model outputs + sensitivity checks</li>
+          </ul>
+        </div>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+        <div class="card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Python (pandas, geopandas, scikit-learn)</li>
+            <li>R (tidyverse, sf)</li>
+            <li>Stata / SQL</li>
+            <li>GitHub for reproducibility</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+    <!-- Right column: contact / form -->
+    <aside class="services-right">
+      <div class="card form-card">
+        <h3>Request a consultation</h3>
+        <p class="form-subtext">
+          Share a little context and I’ll follow up.
+        </p>
 
-    <button type="submit">Submit</button>
-  </form>
+        <form action="https://formspree.io/f/mqazkkrq" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <div class="quick-facts" style="margin-top: 14px;">
+          <div><strong>Email:</strong> <a href="mailto:tyoung@walton.uark.edu">tyoung@walton.uark.edu</a></div>
+          <div>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/tandemyoung" target="_blank" rel="noopener noreferrer">
+              tandemyoung
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Good fit if you need…</h3>
+        <ul>
+          <li>A clear story from complex data</li>
+          <li>Clean and reproducible analysis</li>
+          <li>Spatial / mapping components</li>
+          <li>Results communicated for non-technical audiences</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
 </section>
 
 

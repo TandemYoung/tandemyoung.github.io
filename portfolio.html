@@ -3,14 +3,34 @@ layout: default
 title: Tandem Young - Portfolio
 ---
 
-<section id="portfolio">
+<section id="portfolio" class="portfolio">
   <h2>Portfolio</h2>
-  <p>Here are some of my projects:</p>
+  <p class="portfolio-lede">Selected projects and reports.</p>
 
-  <ul>
-    <li><a href="#">Project 1</a> - A brief description of the project.</li>
-    <li><a href="#">Project 2</a> - A brief description of the project.</li>
-    <li><a href="#">Project 3</a> - A brief description of the project.</li>
-  </ul>
+  <div class="project-grid">
+
+    <article class="project-card">
+      <h3>Economic Contributions of Medical Residencies to Arkansas (2025)</h3>
+      <p>
+        Co-authored report estimating the economic impact of expanding graduate medical education (GME) in Arkansas.
+        Findings suggest adding 275 residents over six years could generate roughly $465M in additional economic activity.
+      </p>
+
+      <ul class="project-tags">
+        <li>Applied Economics</li>
+        <li>Policy Analysis</li>
+        <li>Economic Modeling</li>
+        <li>Health Workforce</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="{{ 'medical-residencies-report.html' | relative_url }}">Project page</a>
+        <a href="{{ '/assets/reports/economic-contributions-medical-residencies-arkansas.pdf' | relative_url }}"
+           target="_blank" rel="noopener noreferrer">PDF</a>
+      </div>
+    </article>
+
+    <!-- Add more <article class="project-card">...</article> blocks here -->
+
+  </div>
 </section>
-
