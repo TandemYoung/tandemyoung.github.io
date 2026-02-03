@@ -3,14 +3,22 @@ layout: default
 title: Tandem Young - Blog
 ---
 
-<section id="blog">
+<section class="blog">
   <h2>Blog</h2>
-  <p>Welcome to my blog! I’ll post updates here on research, projects, and topics I’m exploring.</p>
+  <p class="blog-lede">Welcome to my blog! Here I share updates on research, projects, and topics I'm exploring.</p>
 
-  <ul>
-    <li>
-      <strong>Coming soon</strong> — I’m currently migrating the site and will add posts shortly.
-    </li>
-  </ul>
+  <div class="post-list">
+    {% for post in site.posts %}
+    <article class="post-card">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+      <a href="{{ post.url | relative_url }}" class="btn">Read more</a>
+    </article>
+    {% endfor %}
+  </div>
+
+  {% if site.posts.size == 0 %}
+  <p>No posts yet. Check back soon!</p>
+  {% endif %}
 </section>
-
