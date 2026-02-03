@@ -444,6 +444,15 @@ thead th {
   gap: var(--space-sm);
 }
 
+.wip-list {
+  padding-left: var(--space-xl);
+  line-height: var(--line-height-relaxed);
+}
+
+.wip-list li {
+  margin-bottom: var(--space-sm);
+}
+
 .placeholder-text {
   color: var(--color-text-muted);
   font-style: italic;
