@@ -378,6 +378,15 @@ thead th {
   max-width: var(--max-width-text);
 }
 
+.about-cta {
+  margin-top: var(--space-lg);
+  font-size: var(--font-size-lg);
+}
+
+.about-cta a {
+  color: var(--color-primary);
+}
+
 /* ==========================================================================
    Services Page
    ========================================================================== */
@@ -472,6 +481,35 @@ thead th {
   margin-top: var(--space-sm);
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Teaching Page
+   ========================================================================== */
+.teaching {
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+}
+
+.teaching-lede {
+  max-width: var(--max-width-text);
+  line-height: var(--line-height-relaxed);
+}
+
+.teaching-note {
+  margin-top: var(--space-base);
+  font-size: var(--font-size-sm);
+}
+
+/* ==========================================================================
+   Report Page
+   ========================================================================== */
+.report-facts {
+  margin-top: var(--space-base);
+}
+
+.report-links {
+  margin-top: var(--space-base);
 }
 
 /* ==========================================================================
