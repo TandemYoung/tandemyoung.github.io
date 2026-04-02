@@ -209,6 +209,28 @@ footer a:hover {
 }
 
 /* ==========================================================================
+   Skip Link (Accessibility)
+   ========================================================================== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: var(--space-base);
+  background: var(--color-accent);
+  color: #fff;
+  padding: var(--space-sm) var(--space-base);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  z-index: 200;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: #fff;
+}
+
+/* ==========================================================================
    Utility Classes
    ========================================================================== */
 .content-wrapper {

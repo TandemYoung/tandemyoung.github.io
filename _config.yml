@@ -4,9 +4,17 @@ author: Tandem Young
 url: "https://tandemyoung.github.io"
 baseurl: ""
 
+image: /images/og-image.png
+
+social:
+  name: Tandem Young
+  links:
+    - https://www.linkedin.com/in/tandemyoung
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 exclude:
   - README.md
