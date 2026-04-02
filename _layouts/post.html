@@ -11,7 +11,10 @@
       <article class="blog-post">
         <header class="post-header">
           <h2>{{ page.title }}</h2>
-          <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}</p>
+          <p class="post-meta">
+            {{ page.date | date: "%B %d, %Y" }}
+            <span class="reading-time"></span>
+          </p>
         </header>
 
         <div class="post-content">

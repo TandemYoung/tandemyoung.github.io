@@ -11,7 +11,10 @@ title: Tandem Young - Blog
     {% for post in site.posts %}
     <article class="post-card">
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+      <p class="post-meta">
+        {{ post.date | date: "%B %d, %Y" }}
+        · {% assign words = post.content | number_of_words %}{% if words < 200 %}1{% else %}{{ words | divided_by: 200 }}{% endif %} min read
+      </p>
       <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150 }}</p>
       <a href="{{ post.url | relative_url }}" class="btn">Read more</a>
     </article>
