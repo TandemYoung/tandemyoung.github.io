@@ -1,10 +1,10 @@
 <nav>
-  <a href="{{ 'index.html' | relative_url }}" class="{% if page.url == '/index.html' %}active{% endif %}">Home</a>
-  <a href="{{ 'about.html' | relative_url }}" class="{% if page.url == '/about.html' %}active{% endif %}">About Me</a>
-  <a href="{{ 'research.html' | relative_url }}" class="{% if page.url == '/research.html' %}active{% endif %}">Research</a>
-  <a href="{{ 'portfolio.html' | relative_url }}" class="{% if page.url == '/portfolio.html' %}active{% endif %}">Portfolio</a>
-  <a href="{{ 'teaching.html' | relative_url }}" class="{% if page.url == '/teaching.html' %}active{% endif %}">Teaching</a>
-  <a href="{{ 'cv.html' | relative_url }}" class="{% if page.url == '/cv.html' %}active{% endif %}">CV</a>
-  <a href="{{ 'services.html' | relative_url }}" class="{% if page.url == '/services.html' %}active{% endif %}">Services</a>
-  <a href="{{ 'blog.html' | relative_url }}" class="{% if page.url == '/blog.html' %}active{% endif %}">Blog</a>
+  <a href="{{ 'index.html' | relative_url }}" {% if page.url == '/index.html' %}class="active" aria-current="page"{% endif %}>Home</a>
+  <a href="{{ 'about.html' | relative_url }}" {% if page.url == '/about.html' %}class="active" aria-current="page"{% endif %}>About Me</a>
+  <a href="{{ 'research.html' | relative_url }}" {% if page.url == '/research.html' %}class="active" aria-current="page"{% endif %}>Research</a>
+  <a href="{{ 'portfolio.html' | relative_url }}" {% if page.url == '/portfolio.html' %}class="active" aria-current="page"{% endif %}>Portfolio</a>
+  <a href="{{ 'teaching.html' | relative_url }}" {% if page.url == '/teaching.html' %}class="active" aria-current="page"{% endif %}>Teaching</a>
+  <a href="{{ 'cv.html' | relative_url }}" {% if page.url == '/cv.html' %}class="active" aria-current="page"{% endif %}>CV</a>
+  <a href="{{ 'services.html' | relative_url }}" {% if page.url == '/services.html' %}class="active" aria-current="page"{% endif %}>Services</a>
+  <a href="{{ 'blog.html' | relative_url }}" {% if page.url == '/blog.html' %}class="active" aria-current="page"{% endif %}>Blog</a>
 </nav>

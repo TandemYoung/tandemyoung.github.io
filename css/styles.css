@@ -133,7 +133,7 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.85);
   background: transparent;
 }
 
@@ -728,7 +728,7 @@ tbody tr:nth-child(even) {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-base);
   margin-top: var(--space-base);
 }
@@ -892,13 +892,6 @@ tbody tr:nth-child(even) {
    Breakpoints: sm (600px), md (768px), lg (900px)
    ========================================================================== */
 
-/* Large screens and below (max-width: 900px) */
-@media (max-width: 900px) {
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 /* Medium screens and below (max-width: 768px) */
 @media (max-width: 768px) {
   nav {
@@ -914,7 +907,7 @@ tbody tr:nth-child(even) {
   }
 
   nav a:hover {
-    border-left-color: rgba(255, 255, 255, 0.5);
+    border-left-color: rgba(255, 255, 255, 0.85);
     border-bottom-color: transparent;
   }
 
