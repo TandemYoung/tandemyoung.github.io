@@ -79,7 +79,6 @@ body {
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
   background-size: 20px 20px;
   color: var(--color-text);
-  transition: background-color 0.3s, color 0.3s;
 }
 
 h1, h2, h3, h4 {
@@ -115,8 +114,6 @@ header {
   padding: var(--space-base) 0;
   text-align: center;
   border-bottom: 3px solid var(--color-accent);
-  position: relative;
-  transition: background-color 0.3s;
 }
 
 nav {
@@ -197,7 +194,6 @@ footer {
   color: var(--color-white);
   text-align: center;
   padding: var(--space-base) 0;
-  transition: background-color 0.3s;
 }
 
 footer a {
@@ -304,7 +300,7 @@ form button:hover {
   border-radius: var(--radius-lg);
   padding: 0.875rem var(--space-base);
   background: var(--color-surface);
-  transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s, background-color 0.3s;
+  transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s;
 }
 
 .card:hover {
@@ -1014,71 +1010,6 @@ tbody tr:nth-child(even) {
   .project-grid {
     grid-template-columns: 1fr;
   }
-}
-
-/* ==========================================================================
-   Dark Mode
-   ========================================================================== */
-[data-theme="dark"] {
-  --color-primary: #1a1a2e;
-  --color-primary-light: #16213e;
-  --color-primary-hover: #1f2f50;
-  --color-text: #e0e0e0;
-  --color-text-muted: #aaa;
-  --color-text-light: #999;
-  --color-bg: #0f0f1a;
-  --color-bg-alt: #1a1a2e;
-  --color-surface: #1e1e30;
-  --color-border: #2a2a3e;
-  --color-border-light: #333350;
-  --color-border-input: #444466;
-}
-
-[data-theme="dark"] body {
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-}
-
-[data-theme="dark"] .home-photo,
-[data-theme="dark"] .about-photo {
-  border-color: #2a2a3e;
-  box-shadow: 0 0 0 4px #2a2a3e, 0 0 0 7px var(--color-accent), 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-[data-theme="dark"] .post-card h3 a {
-  color: var(--color-text);
-}
-
-[data-theme="dark"] img {
-  opacity: 0.9;
-}
-
-/* ==========================================================================
-   Theme Toggle Button
-   ========================================================================== */
-.theme-toggle {
-  position: absolute;
-  top: 50%;
-  right: var(--space-base);
-  transform: translateY(-50%);
-  background: none;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: var(--radius-full);
-  width: 2.5rem;
-  height: 2.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: border-color 0.2s, background-color 0.2s;
-  font-size: 1.1rem;
-  line-height: 1;
-  color: #fff;
-  padding: 0;
-}
-
-.theme-toggle:hover {
-  border-color: rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.1);
 }
 
 /* ==========================================================================

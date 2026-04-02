@@ -30,32 +30,6 @@
   }
 
   // ---------------------------------------------------------------------------
-  // Dark mode toggle
-  // ---------------------------------------------------------------------------
-  function initDarkMode() {
-    var btn = document.querySelector('.theme-toggle');
-    if (!btn) return;
-
-    // Set initial icon based on current theme
-    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    btn.textContent = isDark ? '\u2600' : '\u263E';
-
-    btn.addEventListener('click', function () {
-      var html = document.documentElement;
-      var nowDark = html.getAttribute('data-theme') === 'dark';
-      if (nowDark) {
-        html.removeAttribute('data-theme');
-        localStorage.setItem('theme', 'light');
-        btn.textContent = '\u263E';
-      } else {
-        html.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        btn.textContent = '\u2600';
-      }
-    });
-  }
-
-  // ---------------------------------------------------------------------------
   // Back-to-top button
   // ---------------------------------------------------------------------------
   function initBackToTop() {
@@ -93,7 +67,6 @@
   // ---------------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', function () {
     initReveal();
-    initDarkMode();
     initBackToTop();
     initReadingTime();
   });
