@@ -272,6 +272,16 @@ footer a:hover {
   transform: translateY(-1px);
 }
 
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-light);
+  color: var(--color-white);
+}
+
 form button.btn,
 form button {
   padding: var(--space-sm);
@@ -475,6 +485,47 @@ tbody tr:nth-child(even) {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm);
+}
+
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin: var(--space-xl) 0 var(--space-lg);
+  padding: 0;
+  max-width: var(--max-width-text);
+}
+
+.home-stats .stat {
+  padding: var(--space-base) var(--space-md);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  text-align: center;
+}
+
+.stat-value {
+  font-family: var(--font-family-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.15;
+}
+
+.stat-label {
+  margin: var(--space-xs) 0 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.stat-source {
+  display: block;
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  margin-top: 0.125rem;
 }
 
 /* ==========================================================================
@@ -1008,6 +1059,10 @@ tbody tr:nth-child(even) {
 /* Small screens and below (max-width: 600px) */
 @media (max-width: 600px) {
   .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-stats {
     grid-template-columns: 1fr;
   }
 }
