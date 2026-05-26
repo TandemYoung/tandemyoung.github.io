@@ -50,6 +50,20 @@
   }
 
   // ---------------------------------------------------------------------------
+  // Mobile nav toggle
+  // ---------------------------------------------------------------------------
+  function initNavToggle() {
+    var nav = document.querySelector('nav');
+    var btn = nav && nav.querySelector('.nav-toggle');
+    if (!nav || !btn) return;
+
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // ---------------------------------------------------------------------------
   // Reading time (post pages only)
   // ---------------------------------------------------------------------------
   function initReadingTime() {
@@ -68,6 +82,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     initReveal();
     initBackToTop();
+    initNavToggle();
     initReadingTime();
   });
 })();

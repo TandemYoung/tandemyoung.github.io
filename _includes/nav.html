@@ -1,4 +1,7 @@
 <nav>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle menu">
+    <span class="nav-toggle-bars" aria-hidden="true"></span>
+  </button>
   <a href="{{ 'index.html' | relative_url }}" {% if page.url == '/index.html' %}class="active" aria-current="page"{% endif %}>Home</a>
   <a href="{{ 'about.html' | relative_url }}" {% if page.url == '/about.html' %}class="active" aria-current="page"{% endif %}>About Me</a>
   <a href="{{ 'research.html' | relative_url }}" {% if page.url == '/research.html' %}class="active" aria-current="page"{% endif %}>Research</a>

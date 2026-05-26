@@ -148,6 +148,67 @@ nav a.active {
   background: transparent;
 }
 
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  padding: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.nav-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 2px;
+}
+
+.nav-toggle-bars,
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  display: block;
+  width: 1.375rem;
+  height: 2px;
+  background: var(--color-white);
+  border-radius: 1px;
+  transition: transform 0.2s ease, opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.nav-toggle-bars {
+  position: relative;
+}
+
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle-bars::before { top: -0.4375rem; }
+.nav-toggle-bars::after  { top: 0.4375rem; }
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
 .container {
   width: 90%;
   max-width: var(--max-width-container);
@@ -988,15 +1049,28 @@ tbody tr:nth-child(even) {
 /* Medium screens and below (max-width: 768px) */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .nav-toggle {
+    display: inline-flex;
   }
 
   nav a {
+    display: none;
+    flex: 0 0 100%;
     padding: var(--space-sm);
     text-align: left;
     border-top: 1px solid var(--color-primary-hover);
     border-bottom: none;
     border-left: 3px solid transparent;
+  }
+
+  nav.is-open a {
+    display: block;
   }
 
   nav a:hover {
@@ -1097,6 +1171,11 @@ tbody tr:nth-child(even) {
   .home-content h2::after,
   .about-content h2::after {
     width: 2.5rem;
+    transition: none;
+  }
+  .nav-toggle-bars,
+  .nav-toggle-bars::before,
+  .nav-toggle-bars::after {
     transition: none;
   }
   html { scroll-behavior: auto; }
