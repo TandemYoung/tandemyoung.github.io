@@ -9,4 +9,4 @@ Welcome to my personal webpage! I am a PhD student in economics at the Universit
 - **Blog**: Read my latest blog posts on economics, research methodologies, and outdoor adventures.
 - **Contact**: Get in touch with me.
 
-Visit my site at [https://tandemyoung.github.io](https://tandemyoung.github.io).
+Visit my site at [https://tandemyoung.com](https://tandemyoung.com).
