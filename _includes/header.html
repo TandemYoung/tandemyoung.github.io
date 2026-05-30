@@ -1,4 +1,9 @@
-<header>
-  <h1>Tandem J. Young</h1>
-  <p>PhD Student in Economics | Researcher | Outdoor Enthusiast</p>
+<header class="site-header">
+  <div class="site-bar">
+    <a class="site-brand" href="{{ '/index.html' | relative_url }}">Tandem&nbsp;J.&nbsp;Young</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle menu" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+    </button>
+    {% include nav.html %}
+  </div>
 </header>

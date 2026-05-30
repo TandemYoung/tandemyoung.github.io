@@ -1,4 +1,11 @@
 <button class="back-to-top" aria-label="Back to top" title="Back to top">&uarr;</button>
-<footer>
-  <p>&copy; {{ 'now' | date: '%Y' }} Tandem Young. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p class="footer-copy">&copy; {{ 'now' | date: '%Y' }} Tandem J. Young</p>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="mailto:tyoung@walton.uark.edu">Email</a>
+      <a href="https://www.linkedin.com/in/tandemyoung" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="{{ 'cv.html' | relative_url }}">CV</a>
+    </nav>
+  </div>
 </footer>

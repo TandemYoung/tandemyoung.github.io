@@ -1,29 +1,48 @@
 ---
 layout: default
-title: Tandem Young - Research
+title: Tandem Young — Research
 ---
 
 <section id="research" class="research">
-  <h2>Research</h2>
+  <h1 class="page-title">Research</h1>
   <p class="research-lede">
-    My research focuses on applied microeconomics, regional economic development, and health economics.
+    I’m a PhD candidate in economics studying how place shapes economic outcomes — combining spatial
+    analysis, applied econometrics, and causal inference across regional development, public lands, and
+    labor markets.
   </p>
 
-  <h3>Working Papers</h3>
+  <h2 class="section-heading">Publications &amp; Policy Reports</h2>
+  <ul class="pub-list">
+    <li>
+      A. F. Kritikos, M. Hefferon, D. Chelluri, M. L. Hughes, and Tandem J. Young (2026).
+      “The Economic Burden of Mental Health and Substance Use Disorders: The United States and the Heartland Region.”
+      <span class="pub-venue">NORC at the University of Chicago.</span>
+      <span class="pub-links"><a href="{{ 'mh-sud-burden-report.html' | relative_url }}">Summary</a> · <a href="{{ '/assets/reports/MH_SUD_Heartland_508.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a></span>
+    </li>
+    <li>
+      R. DeVol, R. Ramirez-Perez, D. Shideler, and Tandem J. Young (2025).
+      “Economic Contributions of Medical Residencies to Arkansas.”
+      <span class="pub-venue">Heartland Forward.</span>
+      <span class="pub-links"><a href="{{ 'medical-residencies-report.html' | relative_url }}">Summary</a> · <a href="{{ '/assets/reports/economic-contributions-medical-residencies-arkansas.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a></span>
+    </li>
+  </ul>
+  <p class="pub-note">Both reports are featured with full detail on my <a href="{{ 'portfolio.html' | relative_url }}">Portfolio</a>.</p>
+
+  <h2 class="section-heading">Working Papers</h2>
   <div class="paper-list">
     <article class="paper-card">
-      <h4>Peer Effects in Horse Racing: A Tripartite Decomposition of Competitive Responses</h4>
-      <p class="paper-authors">Tandem Young</p>
-      <p class="paper-venue">April 2026</p>
+      <h3>Peer Effects in Horse Racing: A Tripartite Decomposition of Competitive Responses</h3>
+      <p class="paper-authors">Tandem J. Young</p>
+      <p class="paper-venue">April 2026 <span class="paper-tag">Working Paper</span></p>
       <p class="paper-abstract">
         Estimates whether field composition causally affects individual horse performance using the 2023 Equibase
         dataset (42,618 races; 318,702 horse-race entries). A one-point increase in leave-out mean competitor
-        quality raises a horse's own speed rating by 0.10–0.21 Beyer points across OLS, horse fixed effects, two
-        independent instrumental-variable strategies, and a claiming-race subsample. The paper's main contribution
+        quality raises a horse’s own speed rating by 0.10–0.21 Beyer points across OLS, horse fixed effects, two
+        independent instrumental-variable strategies, and a claiming-race subsample. The paper’s main contribution
         is a tripartite decomposition of peer effects into horse, jockey, and trainer channels: horses exhibit a
         positive competitive response to stronger fields (+0.188), while jockeys and trainers show negative
-        tactical effects (−0.085 and −0.063). Better horses respond more strongly to competition—a convex
-        "rising to competition" pattern that contrasts with the discouragement effect documented in golf.
+        tactical effects (−0.085 and −0.063). Better horses respond more strongly to competition — a convex
+        “rising to competition” pattern that contrasts with the discouragement effect documented in golf.
       </p>
       <p class="paper-venue"><strong>JEL Codes:</strong> D82, J24, L83, Z20</p>
       <div class="paper-links">
@@ -32,19 +51,17 @@ title: Tandem Young - Research
     </article>
 
     <article class="paper-card">
-      <h4>Wildlife Management Areas, Deer Quality, and Rural Land Values: A Spatial Hedonic Analysis of Arkansas</h4>
-      <p class="paper-authors">Tandem Young</p>
-      <p class="paper-venue">April 2026 — Working Draft</p>
+      <h3>Wildlife Management Areas, Deer Quality, and Rural Land Values: A Spatial Hedonic Analysis of Arkansas</h3>
+      <p class="paper-authors">Tandem J. Young</p>
+      <p class="paper-venue">April 2026 · Dissertation chapter <span class="paper-tag">Working Draft</span></p>
       <p class="paper-abstract">
-        Develops and validates a spatial hedonic pipeline for estimating the proximity, trophy-quality, and
-        wildlife-disease effects of public hunting lands on rural land values in Arkansas. Uses 308,220
-        tax-assessed agricultural parcels as a proof-of-concept source, matched to seventeen spatial control
-        variables spanning soil quality, hydrology, land cover, roads, urban access, federal public lands, gas
-        wells, CRP, elevation, deer-management zones, CWD zones, and AGFC harvest biodata. Econometric properties
-        are demonstrated through nine identification-robustness perturbations. The WMA &lt; 1/4 mile coefficient is
-        stable at approximately −0.19 across all perturbations, with a placebo distribution confirming the effect
-        is specific to actual WMA locations (p &lt; 0.001). The validated pipeline is designed to detect the
-        theoretically predicted positive gradient in sale data once acquired.
+        Develops and validates a spatial hedonic pipeline for estimating how public hunting lands affect rural
+        land values in Arkansas. The “WMA within ¼ mile” coefficient is stable at approximately −0.19 across
+        nine identification-robustness perturbations, with a placebo distribution confirming the effect is
+        specific to actual WMA locations (p &lt; 0.001). Built on 308,220 tax-assessed agricultural parcels
+        matched to seventeen spatial controls — soil quality, hydrology, land cover, roads, urban access,
+        federal public lands, gas wells, CRP, elevation, and deer- and disease-management zones — the validated
+        pipeline is designed to detect the theoretically predicted positive gradient once sale data are acquired.
       </p>
       <div class="paper-links">
         <a class="btn" href="{{ 'assets/working-papers/poc_report.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
@@ -52,10 +69,26 @@ title: Tandem Young - Research
     </article>
   </div>
 
-  <h3>Work in Progress</h3>
+  <h2 class="section-heading">Work in Progress</h2>
   <ul class="wip-list">
-    <li>Defense Dollars at Home: Localizing Federal Expenditures in Arkansas</li>
-    <li>The Impact of Wildlife Crossing Structures on Roadkill in Colorado</li>
-    <li>Spatial Diffusion in Remote Work Relocation</li>
+    <li>
+      <strong>Defense Dollars at Home: Localizing Federal Expenditures in Arkansas</strong>
+      <span class="wip-meta">— dissertation chapter. Allocates federal defense contract obligations to counties and estimates the local and neighboring-county effects of defense spending on regional outcomes.</span>
+    </li>
+    <li>
+      <strong>The Impact of Animal-Crossing Structures on Roadkill and Road Safety</strong>
+      <span class="wip-meta">— with H. Jung, D. Park, and Z. Tipton. A staggered difference-in-differences design on geocoded crash data estimating the causal effect of 28 Colorado wildlife-crossing structures.</span>
+    </li>
+    <li>
+      <strong>AI Exposure and U.S. Labor Markets</strong>
+      <span class="wip-meta">— with C. Crews. Event-study designs using LLM release timing to study AI exposure and local labor-market outcomes.</span>
+    </li>
+    <li>
+      <strong>Spatially-Smoothed Small-Area Estimates of Depression: Evidence from Online PHQ-9 Screens</strong>
+      <span class="wip-meta">— with D. Shideler.</span>
+    </li>
+    <li>
+      <strong>Determinants of Remote Work Relocation</strong>
+    </li>
   </ul>
 </section>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tandem Young - About Me
+title: Tandem Young — About
 ---
 
 <section id="about" class="about">
@@ -8,35 +8,40 @@ title: Tandem Young - About Me
     <figure class="about-photo-wrap">
       <img
         class="about-photo"
-        src="images/woopig.jpg"
-        alt="Tandem Young at University of Arkansas"
+        src="{{ '/images/portrait.jpg' | relative_url }}"
+        alt="Tandem J. Young"
+        width="800" height="1000"
         loading="lazy"
       >
     </figure>
 
     <div class="about-content">
-      <h2>About Me</h2>
+      <h1 class="page-title">About</h1>
       <p class="about-lede">
-        I’m Tandem Young, a PhD student in Economics at the University of Arkansas. My work focuses on applied
-        econometrics and spatial analysis, with an interest in using data to answer practical policy and industry questions.
+        I came to economics from a finance background, drawn to the questions where careful measurement
+        changes the answer. Today I’m a PhD candidate at the University of Arkansas, where my dissertation —
+        <em>Essays in Spatial and Regional Economics</em> — develops methods for measuring how place, public
+        lands, federal spending, and infrastructure shape local economies. Alongside that academic work, I
+        partner with research organizations and agencies to bring the same rigor to applied policy questions.
       </p>
 
       <div class="about-cards">
         <div class="card">
-          <h3>Research interests</h3>
+          <h2>Research interests</h2>
           <ul>
-            <li>Applied microeconometrics</li>
-            <li>Spatial / regional economics</li>
-            <li>Program and policy evaluation</li>
+            <li>Spatial &amp; regional economics</li>
+            <li>Applied econometrics &amp; causal inference</li>
+            <li>AI exposure &amp; labor markets</li>
+            <li>Health &amp; regional economic development</li>
           </ul>
         </div>
 
         <div class="card">
-          <h3>Outside of work</h3>
+          <h2>Outside of work</h2>
           <ul>
             <li>Kayaking and mountain biking</li>
-            <li>String bass performance</li>
-            <li>Hunting</li>
+            <li>String bass (performed at Carnegie Hall)</li>
+            <li>Hunting and the outdoors</li>
           </ul>
         </div>
       </div>
@@ -47,9 +52,10 @@ title: Tandem Young - About Me
         <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tandemyoung" target="_blank" rel="noopener noreferrer">tandemyoung</a></div>
       </div>
 
-      <p class="about-cta">
-        Interested in working together? <a href="{{ 'services.html' | relative_url }}">View my services</a> or get in touch.
-      </p>
+      <div class="about-cta">
+        <a class="btn btn-primary" href="{{ 'services.html' | relative_url }}">Request a consultation</a>
+        <a class="btn" href="{{ 'cv.html' | relative_url }}">View CV</a>
+      </div>
     </div>
   </div>
 </section>

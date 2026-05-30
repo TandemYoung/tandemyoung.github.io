@@ -1,19 +1,19 @@
 (function () {
   'use strict';
 
-  // ---------------------------------------------------------------------------
-  // Scroll-reveal: fade-in elements as they enter the viewport
-  // ---------------------------------------------------------------------------
-  var revealTargets = 'section, .card, .paper-card, .project-card, .post-card';
+  // Mark that JS is available; the scroll-reveal hiding in CSS is scoped to
+  // `.js [data-reveal]`, so content is always visible if this never runs.
+  document.documentElement.classList.add('js');
 
+  // ---------------------------------------------------------------------------
+  // Scroll-reveal: fade in below-the-fold cards as they enter the viewport.
+  // (Heroes and headings are intentionally never hidden.)
+  // ---------------------------------------------------------------------------
   function initReveal() {
-    var els = document.querySelectorAll(revealTargets);
-    els.forEach(function (el) { el.setAttribute('data-reveal', ''); });
+    var els = document.querySelectorAll('.paper-card, .project-card, .post-card, .course-card');
+    if (!els.length || !('IntersectionObserver' in window)) return;
 
-    // Also tag h2s for animated underlines
-    document.querySelectorAll('section h2, .home-content h2, .about-content h2').forEach(function (el) {
-      el.setAttribute('data-reveal', '');
-    });
+    els.forEach(function (el) { el.setAttribute('data-reveal', ''); });
 
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -22,11 +22,9 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-    document.querySelectorAll('[data-reveal]').forEach(function (el) {
-      observer.observe(el);
-    });
+    els.forEach(function (el) { observer.observe(el); });
   }
 
   // ---------------------------------------------------------------------------
@@ -37,11 +35,7 @@
     if (!btn) return;
 
     window.addEventListener('scroll', function () {
-      if (window.scrollY > 400) {
-        btn.classList.add('visible');
-      } else {
-        btn.classList.remove('visible');
-      }
+      btn.classList.toggle('visible', window.scrollY > 400);
     }, { passive: true });
 
     btn.addEventListener('click', function () {
@@ -50,30 +44,33 @@
   }
 
   // ---------------------------------------------------------------------------
-  // Mobile nav toggle
+  // Mobile nav toggle (open/close, close on link click, close on Escape)
   // ---------------------------------------------------------------------------
   function initNavToggle() {
-    var nav = document.querySelector('nav');
-    var btn = nav && nav.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
+    var btn = document.querySelector('.nav-toggle');
     if (!nav || !btn) return;
+
+    function close() {
+      nav.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
 
     btn.addEventListener('click', function () {
       var open = nav.classList.toggle('is-open');
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-  }
 
-  // ---------------------------------------------------------------------------
-  // Reading time (post pages only)
-  // ---------------------------------------------------------------------------
-  function initReadingTime() {
-    var content = document.querySelector('.post-content');
-    var meta = document.querySelector('.post-header .reading-time');
-    if (!content || !meta) return;
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', close);
+    });
 
-    var words = content.textContent.trim().split(/\s+/).length;
-    var minutes = Math.max(1, Math.round(words / 200));
-    meta.textContent = '\u00B7 ' + minutes + ' min read';
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+        close();
+        btn.focus();
+      }
+    });
   }
 
   // ---------------------------------------------------------------------------
@@ -83,6 +80,5 @@
     initReveal();
     initBackToTop();
     initNavToggle();
-    initReadingTime();
   });
 })();
