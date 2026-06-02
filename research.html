@@ -31,50 +31,82 @@ title: Tandem Young — Research
   <h2 class="section-heading">Working Papers</h2>
   <div class="paper-list">
     <article class="paper-card">
-      <h3>Peer Effects in Horse Racing: A Tripartite Decomposition of Competitive Responses</h3>
+      <h3>The Structural Geography of U.S. Defense Industrial Production: Vulnerability, Resilience, and Surge Capacity Under Autarky</h3>
       <p class="paper-authors">Tandem J. Young</p>
-      <p class="paper-venue">April 2026 <span class="paper-tag">Working Paper</span></p>
+      <p class="paper-venue">May 2026 · Dissertation chapter <span class="paper-tag">Working Draft</span></p>
       <p class="paper-abstract">
-        Estimates whether field composition causally affects individual horse performance using the 2023 Equibase
-        dataset (42,618 races; 318,702 horse-race entries). A one-point increase in leave-out mean competitor
-        quality raises a horse’s own speed rating by 0.10–0.21 Beyer points across OLS, horse fixed effects, two
-        independent instrumental-variable strategies, and a claiming-race subsample. The paper’s main contribution
-        is a tripartite decomposition of peer effects into horse, jockey, and trainer channels: horses exhibit a
-        positive competitive response to stronger fields (+0.188), while jockeys and trainers show negative
-        tactical effects (−0.085 and −0.063). Better horses respond more strongly to competition — a convex
-        “rising to competition” pattern that contrasts with the discouragement effect documented in golf.
+        Reframes defense industrial-base assessment around a distinction the field routinely collapses: a weapons
+        platform has three geographies — where its contracts are booked, where it is physically produced, and where
+        latent capacity could be mobilized. Conventional metrics weight counties by prime-contract share, routing a
+        program’s entire recorded value through its final-assembly site: Tarrant County, TX — home to Lockheed’s F-35
+        plant — records the largest single share of national defense obligations but under one percent of national
+        defense employment. Re-weighting exposure by production reverses the verdict. Mapped onto an input-output
+        county network, the F-35 cluster spans 56 counties across 25 states and behaves as roughly sixteen effective
+        counties; across 100 community-detection seeds no single county’s removal fragments the parts network (median
+        cohesion ≈ 85%), and about 96% of its import content has a domestic substitute. Of the ten largest defense
+        clusters, six are genuinely single-anchor fragile — the production-dispersed F-35 cluster a notable exception.
+        Four public-data instruments — a Leontief closed-loop vulnerability index, co-location spatial weights, a
+        cascade simulation, and a Hidalgo–Hausmann surge-capacity index — operationalize the framework. The analysis
+        is descriptive economic geography, not a causal-effects study.
       </p>
-      <p class="paper-venue"><strong>JEL Codes:</strong> D82, J24, L83, Z20</p>
+      <p class="paper-venue"><strong>JEL Codes:</strong> H56, R12, L64, F52</p>
       <div class="paper-links">
-        <a class="btn" href="{{ 'assets/working-papers/peer_effects_horse_racing.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+        <a class="btn" href="{{ 'assets/working-papers/young_defense_industrial_geography_2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
       </div>
     </article>
 
     <article class="paper-card">
       <h3>Wildlife Management Areas, Deer Quality, and Rural Land Values: A Spatial Hedonic Analysis of Arkansas</h3>
       <p class="paper-authors">Tandem J. Young</p>
-      <p class="paper-venue">April 2026 · Dissertation chapter <span class="paper-tag">Working Draft</span></p>
+      <p class="paper-venue">May 2026 · Dissertation chapter <span class="paper-tag">Working Draft</span></p>
       <p class="paper-abstract">
-        Develops and validates a spatial hedonic pipeline for estimating how public hunting lands affect rural
-        land values in Arkansas. The “WMA within ¼ mile” coefficient is stable at approximately −0.19 across
-        nine identification-robustness perturbations, with a placebo distribution confirming the effect is
-        specific to actual WMA locations (p &lt; 0.001). Built on 308,220 tax-assessed agricultural parcels
-        matched to seventeen spatial controls — soil quality, hydrology, land cover, roads, urban access,
-        federal public lands, gas wells, CRP, elevation, and deer- and disease-management zones — the validated
-        pipeline is designed to detect the theoretically predicted positive gradient once sale data are acquired.
+        Builds and validates the data and inference infrastructure for a spatial hedonic study of how
+        public-hunting-land proximity, deer-harvest quality, and Chronic Wasting Disease capitalize into rural
+        Arkansas land values; the contribution is methodological — the pipeline is validated, not the amenity
+        hypothesis, which awaits market transaction data. Lacking publicly released parcel-level sales, it is built
+        on 308,226 tax-assessed vacant-agricultural parcels across 73 counties and 20 deer-management zones, matched
+        to fourteen spatial data sources. The “WMA within ¼ mile” coefficient is −0.082 (95% CI [−0.130, −0.034]),
+        stable across ten identification-robustness checks (leave-one-out county median −0.082; 30% smaller under
+        coarsened exact matching), and a placebo test relocating 191 pseudo-WMAs places it in the left tail
+        (one-sided p = 0.01). The negative gradient — opposite the positive-amenity prediction for sale prices —
+        reflects WMA placement on marginal terrain and is a diagnostic property of use-value assessment, not evidence
+        that WMAs depress market land values. The model also introduces an age-normalized Boone &amp; Crockett
+        deer-quality index from administrative harvest records, with a staggered difference-in-differences design
+        around Arkansas’s phased CWD-zone expansion (2016, 2018, 2021) as the leading follow-on.
       </p>
+      <p class="paper-venue"><strong>JEL Codes:</strong> C21, Q24, Q26, Q51, R14</p>
       <div class="paper-links">
-        <a class="btn" href="{{ 'assets/working-papers/poc_report.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+        <a class="btn" href="{{ 'assets/working-papers/young-wma_hedonic_arkansas.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+      </div>
+    </article>
+
+    <article class="paper-card">
+      <h3>Peer Effects in Horse Racing: A Tripartite Decomposition of Competitive Responses</h3>
+      <p class="paper-authors">Tandem J. Young</p>
+      <p class="paper-venue">June 2026 <span class="paper-tag">Working Paper</span></p>
+      <p class="paper-abstract">
+        Estimates whether the quality of one’s competitors causally affects individual performance, using the
+        complete 2023 universe of North American thoroughbred racing (36,501 races; 261,496 starts) — a setting with
+        standardized continuous output, within-horse variation in opponents, and institutional sources of plausibly
+        exogenous field variation (post-entry scratches and claiming-price constraints). Across pooled OLS, horse
+        fixed effects, three scratch-based instruments, a claiming-race subsample, and a network instrument, a
+        stronger field raises a horse’s own speed rating by about 0.19 points per unit of competitor quality —
+        roughly 1.4 lengths per standard-deviation shift in field quality — so horses “rise to competition,”
+        reversing the discouragement effect documented among professional golfers. The paper’s main contribution is a
+        tripartite decomposition of the peer effect into the three agents who jointly produce performance: the
+        horse’s response is positive (+0.23) while jockeys and trainers respond negatively (−0.10 and −0.07), so the
+        aggregate understates the horse’s own response. A pre-registered placebo test flags selection into races; the
+        resulting bias is reported as a bracket (roughly 0.10 to 0.48) rather than a single point.
+      </p>
+      <p class="paper-venue"><strong>JEL Codes:</strong> D82, J24, L83, Z20</p>
+      <div class="paper-links">
+        <a class="btn" href="{{ 'assets/working-papers/young-peer-effects-horse-racing.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
       </div>
     </article>
   </div>
 
   <h2 class="section-heading">Work in Progress</h2>
   <ul class="wip-list">
-    <li>
-      <strong>Defense Dollars at Home: Localizing Federal Expenditures in Arkansas</strong>
-      <span class="wip-meta">— dissertation chapter. Allocates federal defense contract obligations to counties and estimates the local and neighboring-county effects of defense spending on regional outcomes.</span>
-    </li>
     <li>
       <strong>The Impact of Animal-Crossing Structures on Roadkill and Road Safety</strong>
       <span class="wip-meta">— with H. Jung, D. Park, and Z. Tipton. A staggered difference-in-differences design on geocoded crash data estimating the causal effect of 28 Colorado wildlife-crossing structures.</span>
