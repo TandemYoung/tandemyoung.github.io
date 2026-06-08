@@ -1,12 +1,25 @@
-# Tandem Young's Personal Webpage
+# Tandem J. Young — Personal Website
 
-Welcome to my personal webpage! I am a PhD student in economics at the University of Arkansas. My research focuses on applied econometrics, spatial analysis, and microeconomic settings. In my free time, I enjoy kayaking, mountain biking, and playing several musical instruments.
+Source for [tandemyoung.com](https://tandemyoung.com), the personal and professional site of
+Tandem J. Young, a PhD candidate in economics at the University of Arkansas. The site serves a
+dual audience: an academic record (research, teaching, CV) and an applied-economics consulting
+practice. Research focuses on spatial and regional economics, applied econometrics, and causal
+inference.
 
-## Sections
-- **About Me**: Learn more about my background and interests.
-- **Portfolio**: Explore my research work and projects.
-- **Services**: Discover the services I offer.
-- **Blog**: Read my latest blog posts on economics, research methodologies, and outdoor adventures.
-- **Contact**: Get in touch with me.
+## Stack
+- [Jekyll](https://jekyllrb.com/) on GitHub Pages, custom domain via `CNAME`.
+- Plugins: `jekyll-seo-tag`, `jekyll-sitemap`, `jekyll-feed`.
+- Layouts/includes in `_layouts/` and `_includes/`; styles in `css/styles.css`; behavior in `js/main.js`.
 
-Visit my site at [https://tandemyoung.com](https://tandemyoung.com).
+## Pages
+- **Home** (`index.html`) — overview and primary calls to action.
+- **About** (`about.html`) — background, research interests, and contact details.
+- **Research** (`research.html`) — publications, working papers, and works in progress.
+- **Portfolio** (`portfolio.html`) — selected applied projects and policy reports.
+- **Teaching** (`teaching.html`) — courses and teaching approach.
+- **CV** (`cv.html`) — embedded and downloadable curriculum vitae.
+- **Services** (`services.html`) — consulting offerings and a contact form.
+
+Documents live under `assets/` (CV, reports, working papers); images under `images/`.
+
+Visit the site at [https://tandemyoung.com](https://tandemyoung.com).
