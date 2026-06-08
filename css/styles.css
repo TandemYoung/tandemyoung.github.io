@@ -935,6 +935,7 @@ tbody tr:nth-child(even) {
 }
 
 .process-steps li {
+  min-width: 0;
   padding: var(--space-lg);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -1185,9 +1186,11 @@ tbody tr:nth-child(even) {
 .project-card {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
-.project-card h2 {
+.project-card h2,
+.project-card h3 {
   margin-top: 0;
   margin-bottom: 0.2rem;
   font-size: var(--fs-h4);
@@ -1425,6 +1428,8 @@ tbody tr:nth-child(even) {
 .js [data-reveal]:nth-child(2) { transition-delay: 0.06s; }
 .js [data-reveal]:nth-child(3) { transition-delay: 0.12s; }
 .js [data-reveal]:nth-child(4) { transition-delay: 0.18s; }
+.js [data-reveal]:nth-child(5) { transition-delay: 0.24s; }
+.js [data-reveal]:nth-child(6) { transition-delay: 0.30s; }
 
 /* ==========================================================================
    Responsive
