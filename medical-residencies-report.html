@@ -47,13 +47,24 @@ description: "Co-authored Heartland Forward report: adding 275 medical residents
     </a>
   </div>
 
-  <div class="cv-frame">
-    <iframe
-      src="{{ '/assets/reports/economic-contributions-medical-residencies-arkansas.pdf' | relative_url }}"
-      title="Economic Contributions of Medical Residencies to Arkansas (PDF)"
-      loading="lazy"
-    ></iframe>
+  <div class="cv-frame pdf-embed">
+    <button
+      type="button"
+      class="pdf-embed-load btn btn-primary"
+      data-pdf-src="{{ '/assets/reports/economic-contributions-medical-residencies-arkansas.pdf' | relative_url }}"
+      data-pdf-title="Economic Contributions of Medical Residencies to Arkansas (PDF)"
+    >View the embedded PDF</button>
+    <p class="pdf-embed-note">Loads a ~2.5&nbsp;MB preview in the page. You can also use Open or Download above.</p>
   </div>
+  <noscript>
+    <div class="cv-frame">
+      <iframe
+        src="{{ '/assets/reports/economic-contributions-medical-residencies-arkansas.pdf' | relative_url }}"
+        title="Economic Contributions of Medical Residencies to Arkansas (PDF)"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </noscript>
 
   <p class="cv-fallback">
     If the embedded PDF doesn’t display on your device, use the buttons above to open or download it.

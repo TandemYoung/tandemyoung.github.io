@@ -7,14 +7,23 @@ description: "Tandem J. Young — applied and spatial economist building econome
 <section class="home">
   <div class="home-hero">
     <figure class="home-photo-wrap">
-      <img
-        class="home-photo"
-        src="{{ '/images/headshot-2026.jpg' | relative_url }}"
-        alt="Tandem J. Young"
-        width="1000" height="1250"
-        loading="eager"
-        fetchpriority="high"
-      >
+      <picture>
+        <source
+          type="image/webp"
+          srcset="{{ '/images/headshot-2026-320.webp' | relative_url }} 320w, {{ '/images/headshot-2026-640.webp' | relative_url }} 640w"
+          sizes="(max-width: 768px) 10rem, 14rem"
+        >
+        <img
+          class="home-photo"
+          src="{{ '/images/headshot-2026-640.jpg' | relative_url }}"
+          srcset="{{ '/images/headshot-2026-320.jpg' | relative_url }} 320w, {{ '/images/headshot-2026-640.jpg' | relative_url }} 640w"
+          sizes="(max-width: 768px) 10rem, 14rem"
+          alt="Tandem J. Young"
+          width="1000" height="1250"
+          loading="eager"
+          fetchpriority="high"
+        >
+      </picture>
     </figure>
 
     <div class="home-content">

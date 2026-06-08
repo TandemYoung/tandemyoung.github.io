@@ -7,13 +7,22 @@ description: "About Tandem J. Young, a PhD candidate in economics at the Univers
 <section id="about" class="about">
   <div class="about-grid">
     <figure class="about-photo-wrap">
-      <img
-        class="about-photo"
-        src="{{ '/images/portrait.jpg' | relative_url }}"
-        alt="Tandem J. Young"
-        width="800" height="1000"
-        loading="lazy"
-      >
+      <picture>
+        <source
+          type="image/webp"
+          srcset="{{ '/images/portrait-320.webp' | relative_url }} 320w, {{ '/images/portrait-640.webp' | relative_url }} 640w"
+          sizes="(max-width: 768px) 15rem, 17rem"
+        >
+        <img
+          class="about-photo"
+          src="{{ '/images/portrait-640.jpg' | relative_url }}"
+          srcset="{{ '/images/portrait-320.jpg' | relative_url }} 320w, {{ '/images/portrait-640.jpg' | relative_url }} 640w"
+          sizes="(max-width: 768px) 15rem, 17rem"
+          alt="Tandem J. Young"
+          width="800" height="1000"
+          loading="lazy"
+        >
+      </picture>
     </figure>
 
     <div class="about-content">
