@@ -1,18 +1,28 @@
 ---
 layout: default
-title: Tandem Young — About
+title: About
+description: "About Tandem J. Young, a PhD candidate in economics at the University of Arkansas working in spatial and regional economics, causal inference, and applied policy."
 ---
 
 <section id="about" class="about">
   <div class="about-grid">
     <figure class="about-photo-wrap">
-      <img
-        class="about-photo"
-        src="{{ '/images/portrait.jpg' | relative_url }}"
-        alt="Tandem J. Young"
-        width="800" height="1000"
-        loading="lazy"
-      >
+      <picture>
+        <source
+          type="image/webp"
+          srcset="{{ '/images/portrait-320.webp' | relative_url }} 320w, {{ '/images/portrait-640.webp' | relative_url }} 640w"
+          sizes="(max-width: 768px) 15rem, 17rem"
+        >
+        <img
+          class="about-photo"
+          src="{{ '/images/portrait-640.jpg' | relative_url }}"
+          srcset="{{ '/images/portrait-320.jpg' | relative_url }} 320w, {{ '/images/portrait-640.jpg' | relative_url }} 640w"
+          sizes="(max-width: 768px) 15rem, 17rem"
+          alt="Tandem J. Young"
+          width="800" height="1000"
+          loading="lazy"
+        >
+      </picture>
     </figure>
 
     <div class="about-content">
@@ -47,9 +57,12 @@ title: Tandem Young — About
       </div>
 
       <div class="quick-facts">
+        <div><strong>PhD (expected):</strong> May 2027 · University of Arkansas</div>
+        <div><strong>Advisor:</strong> Hyunseok Jung (Committee Chair)</div>
         <div><strong>Location:</strong> Fayetteville, AR</div>
         <div><strong>Email:</strong> <a href="mailto:tyoung@walton.uark.edu">tyoung@walton.uark.edu</a></div>
         <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tandemyoung" target="_blank" rel="noopener noreferrer">tandemyoung</a></div>
+        <div><strong>GitHub:</strong> <a href="https://github.com/tandemyoung" target="_blank" rel="noopener noreferrer">tandemyoung</a></div>
       </div>
 
       <div class="about-cta">

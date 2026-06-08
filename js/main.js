@@ -39,7 +39,8 @@
     }, { passive: true });
 
     btn.addEventListener('click', function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
     });
   }
 
@@ -74,11 +75,36 @@
   }
 
   // ---------------------------------------------------------------------------
+  // Click-to-load PDF embeds: defer the heavy report iframes until requested.
+  // (A <noscript> fallback in the markup embeds the PDF when JS is unavailable.)
+  // ---------------------------------------------------------------------------
+  function initPdfEmbeds() {
+    var btns = document.querySelectorAll('.pdf-embed-load');
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var wrap = btn.closest('.pdf-embed');
+        if (!wrap) return;
+
+        var iframe = document.createElement('iframe');
+        iframe.src = btn.getAttribute('data-pdf-src');
+        iframe.title = btn.getAttribute('data-pdf-title') || 'Embedded PDF';
+        iframe.setAttribute('loading', 'lazy');
+
+        wrap.innerHTML = '';
+        wrap.classList.remove('pdf-embed');
+        wrap.appendChild(iframe);
+        iframe.focus();
+      });
+    });
+  }
+
+  // ---------------------------------------------------------------------------
   // Init
   // ---------------------------------------------------------------------------
   document.addEventListener('DOMContentLoaded', function () {
     initReveal();
     initBackToTop();
     initNavToggle();
+    initPdfEmbeds();
   });
 })();

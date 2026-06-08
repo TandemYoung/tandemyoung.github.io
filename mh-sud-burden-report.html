@@ -1,7 +1,27 @@
 ---
 layout: default
 title: Economic Burden of Mental Health and Substance Use Disorders
+description: "Co-authored NORC report quantifying the $107.3B annual U.S. economic burden of mental health and substance use disorders, with Heartland-region and Arkansas detail."
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Report",
+  "headline": "The Economic Burden of Mental Health and Substance Use Disorders: The United States and the Heartland Region",
+  "author": [
+    { "@type": "Person", "name": "A. F. Kritikos" },
+    { "@type": "Person", "name": "M. Hefferon" },
+    { "@type": "Person", "name": "D. Chelluri" },
+    { "@type": "Person", "name": "M. L. Hughes" },
+    { "@type": "Person", "name": "Tandem J. Young" }
+  ],
+  "datePublished": "2026-02",
+  "publisher": { "@type": "Organization", "name": "NORC at the University of Chicago" },
+  "url": "https://tandemyoung.com/mh-sud-burden-report.html",
+  "mainEntityOfPage": "https://tandemyoung.com/mh-sud-burden-report.html"
+}
+</script>
 
 <section class="report">
   <a class="back-link" href="{{ 'portfolio.html' | relative_url }}">&larr; Back to Portfolio</a>
@@ -15,9 +35,9 @@ title: Economic Burden of Mental Health and Substance Use Disorders
 
   <div class="quick-facts report-facts">
     <div><strong>Headline finding:</strong> Mental health and substance use disorders impose a $107.3 billion annual economic burden on the U.S.</div>
-    <div><strong>Breakdown:</strong> $59.5B in health care costs + $47.7B in productivity losses from premature mortality.</div>
-    <div><strong>Heartland region:</strong> $11.2B burden across 8 states (AR, IA, KS, MO, NE, ND, OK, SD).</div>
-    <div><strong>Arkansas impact:</strong> $2.33B total burden ($1.05B health care + $1.28B productivity losses).</div>
+    <div><strong>Breakdown:</strong> $59.5B in health care costs + $47.7B in productivity losses (absenteeism, unemployment, and foregone tax revenue).</div>
+    <div><strong>Heartland region:</strong> $11.2B burden across 7 states (AR, IL, IN, KS, MO, OK, TN).</div>
+    <div><strong>Arkansas impact:</strong> ≈$0.7B total burden (≈$0.6B health care + ≈$90M in lost wages).</div>
   </div>
 
   <div class="doc-actions">
@@ -29,13 +49,24 @@ title: Economic Burden of Mental Health and Substance Use Disorders
     </a>
   </div>
 
-  <div class="cv-frame">
-    <iframe
-      src="{{ '/assets/reports/MH_SUD_Heartland_508.pdf' | relative_url }}"
-      title="Economic Burden of Mental Health and Substance Use Disorders (PDF)"
-      loading="lazy"
-    ></iframe>
+  <div class="cv-frame pdf-embed">
+    <button
+      type="button"
+      class="pdf-embed-load btn btn-primary"
+      data-pdf-src="{{ '/assets/reports/MH_SUD_Heartland_508.pdf' | relative_url }}"
+      data-pdf-title="Economic Burden of Mental Health and Substance Use Disorders (PDF)"
+    >View the embedded PDF</button>
+    <p class="pdf-embed-note">Loads a ~2&nbsp;MB preview in the page. You can also use Open or Download above.</p>
   </div>
+  <noscript>
+    <div class="cv-frame">
+      <iframe
+        src="{{ '/assets/reports/MH_SUD_Heartland_508.pdf' | relative_url }}"
+        title="Economic Burden of Mental Health and Substance Use Disorders (PDF)"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </noscript>
 
   <p class="cv-fallback">
     If the embedded PDF doesn’t display on your device, use the buttons above to open or download it.

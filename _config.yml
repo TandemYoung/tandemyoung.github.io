@@ -10,9 +10,10 @@ timezone: America/Chicago
 image: /images/og-image.png
 
 social:
-  name: Tandem Young
+  name: Tandem J. Young
   links:
     - https://www.linkedin.com/in/tandemyoung
+    - https://github.com/tandemyoung
 
 plugins:
   - jekyll-seo-tag
