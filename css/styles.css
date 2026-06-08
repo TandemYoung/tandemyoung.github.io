@@ -917,6 +917,102 @@ tbody tr:nth-child(even) {
   margin-top: var(--space-base);
 }
 
+/* Services — process, case studies, engagement, form extras */
+.process,
+.case-studies,
+.testimonials {
+  margin-top: var(--space-2xl);
+}
+
+.process-steps {
+  list-style: none;
+  margin: var(--space-base) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-base);
+  counter-reset: step;
+}
+
+.process-steps li {
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.process-steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  margin-bottom: var(--space-sm);
+  border-radius: var(--radius-full);
+  background: var(--color-accent-subtle);
+  color: var(--color-accent);
+  font-weight: 700;
+  font-family: var(--font-family-heading);
+}
+
+.process-steps h3 {
+  margin: 0 0 0.2rem;
+  font-size: var(--fs-h4);
+}
+
+.process-steps p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.testimonial {
+  margin: var(--space-base) 0 0;
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+}
+
+.testimonial blockquote {
+  margin: 0;
+  font-size: var(--font-size-lg);
+}
+
+.testimonial figcaption {
+  margin-top: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.required-note {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.req {
+  color: var(--color-accent);
+}
+
+.form-note {
+  margin-top: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* ==========================================================================
    CV
    ========================================================================== */
@@ -1421,6 +1517,10 @@ tbody tr:nth-child(even) {
     grid-template-columns: 1fr;
   }
 
+  .process-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .cv-frame {
     height: 70vh;
   }
@@ -1428,6 +1528,10 @@ tbody tr:nth-child(even) {
 
 @media (max-width: 600px) {
   .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-steps {
     grid-template-columns: 1fr;
   }
 
