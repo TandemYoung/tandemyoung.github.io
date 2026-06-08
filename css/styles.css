@@ -1067,6 +1067,11 @@ tbody tr:nth-child(even) {
   color: var(--color-text-muted);
 }
 
+/* Without JS the button can't load the iframe, so hide it and let the <noscript> embed show. */
+html:not(.js) .pdf-embed {
+  display: none;
+}
+
 .cv-fallback {
   margin-top: var(--space-sm);
   font-size: var(--font-size-sm);
