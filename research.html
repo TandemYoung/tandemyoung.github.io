@@ -32,9 +32,9 @@ description: "Working papers and policy reports by Tandem J. Young in spatial an
   <h2 class="section-heading">Working Papers</h2>
   <div class="paper-list">
     <article class="paper-card">
-      <h3>The Structural Geography of U.S. Defense Industrial Production: Vulnerability, Resilience, and Surge Capacity Under Autarky</h3>
+      <h3>Booked, Built, Mobilized: The Three Geographies of U.S. Defense Industrial Production</h3>
       <p class="paper-authors">Tandem J. Young</p>
-      <p class="paper-venue">May 2026 · Dissertation chapter <span class="paper-tag">Working Draft</span></p>
+      <p class="paper-venue">June 2026 · Dissertation chapter <span class="paper-tag">Working Draft</span></p>
       <p class="paper-abstract">
         Reframes defense industrial-base assessment around a distinction the field routinely collapses: a weapons
         platform has three geographies — where its contracts are booked, where it is physically produced, and where
@@ -44,7 +44,7 @@ description: "Working papers and policy reports by Tandem J. Young in spatial an
         defense employment. Re-weighting exposure by production reverses the verdict. Mapped onto an input-output
         county network, the F-35 cluster spans 56 counties across 25 states and behaves as roughly sixteen effective
         counties; across 100 community-detection seeds no single county’s removal fragments the parts network (median
-        cohesion ≈ 85%), and about 96% of its import content has a domestic substitute. Of the ten largest defense
+        cohesion ≈ 85%), and about 95% of its import content has a domestic substitute. Of the ten largest defense
         clusters, six are genuinely single-anchor fragile — the production-dispersed F-35 cluster a notable exception.
         Four public-data instruments — a Leontief closed-loop vulnerability index, co-location spatial weights, a
         cascade simulation, and a Hidalgo–Hausmann surge-capacity index — operationalize the framework. The analysis
@@ -67,8 +67,8 @@ description: "Working papers and policy reports by Tandem J. Young in spatial an
         hypothesis, which awaits market transaction data. Lacking publicly released parcel-level sales, it is built
         on 308,226 tax-assessed vacant-agricultural parcels across 73 counties and 20 deer-management zones, matched
         to fourteen spatial data sources. The “WMA within ¼ mile” coefficient is −0.082 (95% CI [−0.130, −0.034]),
-        stable across ten identification-robustness checks (leave-one-out county median −0.082; 30% smaller under
-        coarsened exact matching), and a placebo test relocating 191 pseudo-WMAs places it in the left tail
+        stable across ten identification-robustness checks (leave-one-out county median −0.082; 30% smaller, to
+        −0.057, under coarsened exact matching), and a placebo test relocating 191 pseudo-WMAs places it in the left tail
         (one-sided p = 0.01). The negative gradient — opposite the positive-amenity prediction for sale prices —
         reflects WMA placement on marginal terrain and is a diagnostic property of use-value assessment, not evidence
         that WMAs depress market land values. The model also introduces an age-normalized Boone &amp; Crockett
@@ -82,22 +82,48 @@ description: "Working papers and policy reports by Tandem J. Young in spatial an
     </article>
 
     <article class="paper-card">
-      <h3>Peer Effects in Horse Racing: A Tripartite Decomposition of Competitive Responses</h3>
+      <h3>Fueling Access: Gasoline Prices, Remoteness, and the Travel-Cost Elasticity of National-Park Demand</h3>
       <p class="paper-authors">Tandem J. Young</p>
       <p class="paper-venue">June 2026 <span class="paper-tag">Working Paper</span></p>
       <p class="paper-abstract">
-        Estimates whether the quality of one’s competitors causally affects individual performance, using the
-        complete 2023 universe of North American thoroughbred racing (36,501 races; 261,496 starts) — a setting with
-        standardized continuous output, within-horse variation in opponents, and institutional sources of plausibly
-        exogenous field variation (post-entry scratches and claiming-price constraints). Across pooled OLS, horse
-        fixed effects, three scratch-based instruments, a claiming-race subsample, and a network instrument, a
-        stronger field raises a horse’s own speed rating by about 0.19 points per unit of competitor quality —
-        roughly 1.4 lengths per standard-deviation shift in field quality — so horses “rise to competition,”
-        reversing the discouragement effect documented among professional golfers. The paper’s main contribution is a
-        tripartite decomposition of the peer effect into the three agents who jointly produce performance: the
-        horse’s response is positive (+0.23) while jockeys and trainers respond negatively (−0.10 and −0.07), so the
-        aggregate understates the horse’s own response. A pre-registered placebo test flags selection into races; the
-        resulting bias is reported as a bracket (roughly 0.10 to 0.48) rather than a single point.
+        Measures how sensitive demand for public-land recreation is to the cost of getting there. In a monthly panel
+        of 371 contiguous-state national-park units spanning 1993–2025, regional gasoline prices are interacted with
+        each park’s remoteness from population. Because gasoline prices are procyclical, the level of the travel-cost
+        elasticity is not identified — but its remoteness gradient is, recovered from cross-region price variation
+        under a parallel-cyclical-response assumption that a non-fuel placebo supports. A one-standard-deviation
+        increase in remoteness makes a park’s gas-price elasticity roughly 0.07 log points more negative
+        (p ≈ 0.04 excluding the pandemic; p = 0.003 before it) — a point estimate stable across remoteness measures,
+        price geographies, and sub-periods, and one that reappears in pre-2010 data predating the 2014 and 2022 price
+        cycles. The adjustment is extensive (fewer trips, unchanged visit duration), concentrated at lower-volume
+        parks, with no detectable diversion to nearer parks. Applied to the fuel-price changes implied by carbon
+        pricing, the gradient implies a spatially regressive incidence: under the EPA social cost of carbon, parks at
+        the 90th percentile of remoteness lose roughly seven percentage points more access than those at the 10th — a
+        recreation-access co-cost concentrated in the rural West and rarely counted.
+      </p>
+      <p class="paper-venue"><strong>JEL Codes:</strong> Q26, Q51, Q54, R41, L83</p>
+      <div class="paper-links">
+        <a class="btn" href="{{ 'assets/working-papers/young-travel-cost-national-parks.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+      </div>
+    </article>
+
+    <article class="paper-card">
+      <h3>Rising to Competition: Peer Effects and a Tripartite Decomposition in Horse Racing</h3>
+      <p class="paper-authors">Tandem J. Young</p>
+      <p class="paper-venue">June 2026 <span class="paper-tag">Working Paper</span></p>
+      <p class="paper-abstract">
+        Estimates whether the quality of one’s competitors causally raises or depresses individual performance — and
+        whether the agents who jointly produce it respond alike — using the complete 2023 universe of North American
+        thoroughbred racing (36,501 races; 261,496 entries), where post-entry scratches and claiming-price constraints
+        supply plausibly exogenous variation in field composition. The aggregate peer effect is positive and robust in
+        sign across designs — pooled OLS (0.148), horse fixed effects (0.193), triple fixed effects (0.184), scratch
+        and network instruments, and a claiming subsample — with a preferred within-horse magnitude of about 0.19,
+        roughly 1.4 lengths per standard-deviation shift in field quality, so horses “rise to competition,” reversing
+        the discouragement effect documented among professional golfers. The paper’s main contribution is a tripartite
+        decomposition of this aggregate into the three agents who jointly produce performance: horses respond
+        positively (about +0.23) while jockeys and trainers respond negatively (about −0.10 and −0.07 jointly), so the
+        aggregate understates the horse’s own response. The sign pattern survives dynamic-panel and errors-in-variables
+        corrections, though the horse channel is suggestive rather than pinned. A pre-specified placebo does not pass;
+        the resulting 0.10–0.48 range is a robustness envelope across designs, not a single identified interval.
       </p>
       <p class="paper-venue"><strong>JEL Codes:</strong> D82, J24, L83, Z20</p>
       <div class="paper-links">
